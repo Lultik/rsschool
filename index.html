@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
    <meta charset="UTF-8">
-   <meta name="viewport"
-         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="viewport"
+         content="width=device-width, initial-scale=1.0">
    <title>Document</title>
    <link rel="stylesheet" href="main.css">
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
@@ -12,140 +12,160 @@
 
 <body>
 <header class="header">
-   <div class="header-photo"></div>
-   <h1 class="header-title">Mikhail Stankevich</h1>
-   <p class="header-subtitle">Men, Metrologist, Mem</p>
-   <div class="header-arrow">
-      <img src="./img/header/chevron-down.svg" alt="">
+   <div class="profile">
+      <div class="profile_wrapper">
+         <img class="profile_photo" src="./img/header/photo.JPG" alt="Photo">
+      </div>
+      <h1 class="profile_title">Mikhail Stankevich</h1>
+      <p class="profile_subtitle">Men, Metrologist, Mem</p>
    </div>
+   <a class="header_arrow" href="#main">
+      <img src="./img/header/chevron-down.svg" alt="">
+   </a>
 </header>
 
-<section class="about">
-   <div class="container">
-      <h2 class="section-header">About me</h2>
-      <div class="about-cards-wrapper">
-         <! -- Card -->
-         <div class="card">
-            <h3 class="card-title">Goals, wishes</h3>
-            <p>Main goal in my life is always take some knowledges, i think wthout selfeducation people would remained
-               monkeys. <br>I want use my knowledges to make my life more easily.</p>
-         </div>
-         <! -- // Card -->
+<main id="main">
+   <section class="about section">
+      <div class="wrapper">
+         <h2 class="section_header">About me</h2>
+         <div class="about-cards">
+            <!-- Card -->
+            <article class="card about-cards_item">
+               <h3 class="card_title">Goals, wishes</h3>
+               <p class="card_description">Main goal in my life is always take some knowledges, i think wthout
+                  selfeducation people would remained
+                  monkeys. <br>I want use my knowledges to make my life more easily.</p>
+            </article>
+            <!-- // Card -->
 
-         <! -- Card -->
-         <div class="card">
-            <h3 class="card-title">Experience</h3>
-            <p>In Feb 2020 i start RSSchool and full year completes tasks from school <br> Have no other experience in FE :(</p>
-         </div>
-         <! -- // Card -->
+            <!-- Card -->
+            <article class="card about-cards_item">
+               <h3 class="card_title">Experience</h3>
+               <p class="card_description">In Feb 2020 i start RSSchool and full year completes tasks from school <br>
+                  Have no other experience in
+                  FE :(</p>
+            </article>
+            <!-- // Card -->
 
-         <! -- Card -->
-         <div class="card">
-            <h3 class="card-title">Skills</h3>
-            <ul class="skills-list">
-               <li>HTML, CSS</li>
-               <li>JS</li>
-               <li>C/C++</li>
-               <li>Graph design</li>
-               <li>Procrastination</li>
-               <li>Mem looking</li>
-            </ul>
+            <!-- Card -->
+            <article class="card about-cards_item">
+               <h3 class="card_title">Skills</h3>
+               <ul class="skills">
+                  <li>HTML, CSS</li>
+                  <li>JS</li>
+                  <li>C/C++</li>
+                  <li>Graph design</li>
+                  <li>Procrastination</li>
+                  <li>Mem looking</li>
+               </ul>
+            </article>
+            <!-- // Card -->
+            <!-- Card -->
+            <article class="card about-cards_item">
+               <h3 class="card_title">Education, english</h3>
+               <p class="card_description">Belarusian State University of Informatics and Radioelectronics, 2014 -
+                  2018</p>
+               <p class="card_description">English level - A2</p>
+            </article>
+            <!-- // Card -->
          </div>
-         <! -- // Card -->
-         <! -- Card -->
-         <div class="card">
-            <h3 class="card-title">Education, english</h3>
-            <p>Belarusian State University of Informatics and Radioelectronics, 2014 - 2018</p>
-            <p><br>English level - A2</p>
-         </div>
-         <! -- // Card -->
       </div>
-   </div>
-</section>
+   </section>
+   <section class="portfolio">
+      <div class="wrapper">
+         <h2 class="section_header">Portfolio</h2>
 
-<section class="portfolio">
-   <div class="container">
-      <h2 class="section-header">Portfolio</h2>
+         <!-- portfolio-cards -->
+         <div class="portfolio-cards">
 
-      <! -- portfolio-cards-wrapper -->
-      <div class="portfolio-cards-wrapper">
-         <! -- Card -->
-         <div class="card">
-            <img class="card-img" src="./img/portfolio/singolo.png" alt="singolo">
-            <h3 class="card-title">Singolo</h3>
-            <p>Project from RsSchool</p>
-         </div>
-         <! -- // Card -->
+            <!-- Card -->
+            <article class="card porfolio-cards_item">
+               <a href="http://lultik.github.io/singolo" target="_blank">
+                  <img class="card_img" src="./img/portfolio/singolo.png" alt="singolo">
+               </a>
+               <h3 class="card_title">Singolo</h3>
+               <p class="card_description">Project from RsSchool</p>
+            </article>
+            <!-- // Card -->
 
-         <! -- Card -->
-         <div class="card">
-            <img class="card-img" src="./img/portfolio/keyboard.png" alt="singolo">
-            <h3 class="card-title">Virtual Keyboard</h3>
-            <p>Project from RsSchool</p>
-         </div>
-         <! -- // Card -->
-         <! -- Card -->
-         <div class="card">
-            <img class="card-img" src="./img/portfolio/english-for-kids.png" alt="english-for-kids">
-            <h3 class="card-title">English for kids</h3>
-            <p>Project from RsSchool</p>
-         </div>
-         <! -- // Card -->
+            <!-- Card -->
+            <article class="card porfolio-cards_item">
+               <a href="https://lultik.github.io/codejam-virtual-keyboard/" target="_blank">
+                  <img class="card_img" src="./img/portfolio/keyboard.png" alt="keyboard">
+               </a>
+               <h3 class="card_title">Virtual Keyboard</h3>
+               <p class="card_description">Project from RsSchool</p>
+            </article>
+            <!-- // Card -->
+            <!-- Card -->
+            <article class="card porfolio-cards_item">
+               <a href="https://lultk-english-for-kids.netlify.app" target="_blank">
+                  <img class="card_img" src="./img/portfolio/english-for-kids.png" alt="english-for-kids">
+               </a>
+               <h3 class="card_title">English for kids</h3>
+               <p class="card_description">Project from RsSchool</p>
+            </article>
+            <!-- // Card -->
 
-         <! -- Card -->
-         <div class="card">
-            <img class="card-img" src="./img/portfolio/wildlife.png" alt="wildlife">
-            <h3 class="card-title">Wildlife</h3>
-            <p>Project from RsSchool</p>
+            <!-- Card -->
+            <article class="card porfolio-cards_item">
+               <a href="https://lultik-wildlife.netlify.app" target="_blank">
+                  <img class="card_img" src="./img/portfolio/wildlife.png" alt="wildlife">
+               </a>
+               <h3 class="card_title">Wildlife</h3>
+               <p class="card_description">Project from RsSchool</p>
+            </article>
+            <!-- // Card -->
          </div>
-         <! -- // Card -->
+         <!-- //portfolio-cards -->
+
       </div>
-      <! -- //portfolio-cards-wrapper -->
+   </section>
+</main>
 
-
-   </div>
-</section>
-
-<div class="footer">
-   <div class="container">
-      <div class="footer-row">
+<footer class="footer">
+   <div class="wrapper">
+      <div class="footer_info">
          <!--           Copyright -->
-         <div class="footer-copyright footer-col">
-            <div class="footer-copyright-name">© Mikhail Stankevich</div>
-            <p>I Can To Do Nothing</p>
+         <div class="copyright footer_col">
+            <h4 class="copyright_author">© Mikhail Stankevich</h4>
+            <h5 class="copyright_note">I Can To Do Nothing</h5>
          </div>
          <!--          //Copyright-->
 
          <!--            icons SMM-->
-         <div class="footer-icons footer-col">
-            <p>Мои профили в социальных сетях:</p>
-            <div class="footer-icons-row">
-               <a href="https://github.com/Lultik">
-                  <img src="./img/icons/git.svg" alt="GitHub">
+         <div class="share footer_col">
+            <h4 class="share_title">Мои профили в социальных сетях:</h4>
+            <div class="share_icons">
+               <a class="share_link" href="https://github.com/Lultik" target="_blank">
+                  <img class="share_icon" src="./img/icons/git.svg" alt="GitHub">
                </a>
-               <a href="https://www.instagram.com/shark.overland/">
-                  <img src="./img/icons/instagram.svg" alt="instagram">
+               <a class="share_link" href="https://www.instagram.com/shark.overland/" target="_blank">
+                  <img class="share_icon" src="./img/icons/instagram.svg" alt="instagram">
                </a>
-               <a href="skype:live:.cid.a70ee15712debe4a?chat">
-                  <img src="./img/icons/skype.svg" alt="VK">
+               <a class="share_link" href="skype:live:.cid.a70ee15712debe4a?chat" target="_blank">
+                  <img class="share_icon" src="./img/icons/skype.svg" alt="VK">
                </a>
-               <a href="mailto:mihwil27021@gmail.com">
-                  <img src="./img/icons/email.svg" alt="facebook">
+               <a class="share_link" href="mailto:mihwil27021@gmail.com" target="_blank">
+                  <img class="share_icon" src="./img/icons/email.svg" alt="facebook">
+               </a>
+               <a class="share_link" href="https://app.rs.school" target="_blank">
+                  <img class="share_icon" src="./img/icons/logo-rsschool.svg" alt="RS School">
                </a>
             </div>
          </div>
          <!--            //icons SMM-->
          <!--            footer contacts-->
-         <div class="footer-contacts footer-col">
-            <a href="http://t.me/mihwil27021" class="footer-btn">
+         <div class="contacts footer_col">
+            <a href="http://t.me/mihwil27021" class="contacts_btn">
                Связаться в Телеграмм
             </a>
-            <p>You can write me to get fun sticker or </p>
+            <p class="contacts_text">Write to get fun sticker</p>
          </div>
          <!--          //footer contacts-->
       </div>
    </div>
-</div>
+</footer>
 
 </body>
 </html>
